@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./static/estilo.css">
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"><img src="./imagens/logo.png" alt="lenhador"></a>
+        </li>
+        <li class="py-3">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="py-3">
+            <a class="nav-link" data-toggle="modal" href="#ModalLongoExemplo">Agendamento</a>
+        </li>
+        <li class="py-3">
+            <a class="nav-link" href="localizacao.html">Localização</a>
+        </li>
+        <li class="py-3">
+            <a class="nav-link" href="fotos.html">Fotos</a>
+        </li>
+    </ul>
+
+    
+    <br><br>
+    <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15901.48574037247!2d-66.90567177993219!3d-4.877298263240886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92203c06ab86a333%3A0x61ea0bf0faac18b2!2sCarauari%2C%20AM%2C%2069500-000!5e0!3m2!1spt-BR!2sbr!4v1667009104842!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TituloModalLongoExemplo">Título do modal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nome:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Por qual barbeiro você deseja ser atendido?</label>
+                  <select class="form-control">
+                    <option>Gustavo</option>
+                    <option>Paulo Henrique</option>
+                    <option>Lucas Moura</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Para quando você deseja marcar a sessão?</label>
+                  <input type="datetime-local" class="form-control" id="data-corte">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">O que você deseja fazer?</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Corte de cabelo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Corte de barba
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Pintura
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Tratamento do cabelo
+                    </label>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <input type="submit" class="btn btn-primary" id="bt-form" value="Agendar">
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <footer class="container-center" id="mapa">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>© Barbearia Lenhador · <a href="#">Privacidade</a> · <a href="#">Termos</a></p>
+        <div class="rd-img">
+            <small>Acesse nossas redes sociais:</small>
+            <a href="https://instagram.com/barbearialenhador20222"><img src="./imagens/logos - redes sociais/Logo-instagram.png"></a>
+            <a href="https://tiktok.com/barbearialenhador20222"><img src="./imagens/logos - redes sociais/Logo-tiktok.png"></a>
+            <a href="https://wa.me/+5511999999999"><img src="./imagens/logos - redes sociais/Logo-whatsapp.png"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

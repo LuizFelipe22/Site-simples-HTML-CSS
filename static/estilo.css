@@ -1,0 +1,39 @@
+.navbar navbar-light{
+    background-color: #e3f2fd;
+}
+
+.card {
+    display:table-cell;
+    width:25%;
+}
+
+#card-bar{
+    display: grid;
+  /* aqui eu determino é são 3 colunas de tamanhos iguas, cada coluna tem uma fração */
+  grid-template-columns: repeat(3, 1fr);
+  /* margem interna que afasta os elementos da borda do grid */
+  padding: 20px 10px;
+}
+
+.rd-img img{
+    height: 50px;
+    width: 50px;
+}
+
+.rd-img{
+    text-align: right;
+}
+
+#mapa{
+    align-self: center;
+}
+
+#fotos-tb img{
+    height: 400px;
+    width: 300px;
+}
+
+.carousel-item img{
+    height: 600px;
+    width: 333px;
+}
